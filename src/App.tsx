@@ -1,10 +1,13 @@
-import './App.css';
+import { GlobalProvider } from './contexts';
+import { GlobalStyle } from './styles/global';
+import { ResetStyle } from './styles/reset';
 
 function App() {
   return (
-    <>
-      <h1>User</h1>
-    </>
+    <GlobalProvider>
+      <ResetStyle />
+      <GlobalStyle />
+    </GlobalProvider>
   );
 }
 
