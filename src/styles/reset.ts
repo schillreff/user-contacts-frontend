@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+	font-family: "Roboto", sans-serif;
 	line-height: 1;
 	background: var(--color-gray-4);
 	height: 100%;
