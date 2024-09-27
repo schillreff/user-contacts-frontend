@@ -1,4 +1,4 @@
 export interface IThemeButtonProps {
-  size: string;
-  buttonColor: string;
+  $size: string;
+  $buttonColor: string;
 }

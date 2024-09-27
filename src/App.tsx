@@ -1,4 +1,5 @@
 import { GlobalProvider } from './contexts';
+import { RoutesMain } from './routes';
 import { GlobalStyle } from './styles/global';
 import { ResetStyle } from './styles/reset';
 
@@ -7,6 +8,7 @@ function App() {
     <GlobalProvider>
       <ResetStyle />
       <GlobalStyle />
+      <RoutesMain />
     </GlobalProvider>
   );
 }
