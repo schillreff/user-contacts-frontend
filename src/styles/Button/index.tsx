@@ -10,7 +10,7 @@ export const ThemeButton = styled.button<IThemeButtonProps>`
   cursor: pointer;
 
   ${(props) => {
-    switch (props.size) {
+    switch (props.$size) {
       case 'large':
         return css`
           padding: 5px 10px;
@@ -25,7 +25,7 @@ export const ThemeButton = styled.button<IThemeButtonProps>`
   }}
 
   ${(props) => {
-    switch (props.buttonColor) {
+    switch (props.$buttonColor) {
       case 'primary':
         return css`
           background: var(--color-primary);
