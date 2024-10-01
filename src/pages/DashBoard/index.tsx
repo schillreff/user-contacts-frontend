@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { BsPlusLg } from 'react-icons/bs';
 import { ContactList } from '../../components/Contact/ContactList';
+import { EditContact } from '../../components/Contact/EditContact';
 import { RegisterContact } from '../../components/Contact/RegisterContact';
 import { Container } from '../../components/Container';
 import { Header } from '../../components/Header';
@@ -18,8 +19,8 @@ export const DashBoard = () => {
   return (
     <>
       {openModal && <RegisterContact />}
-      {/* {openModalEdit && <EditContact />}
-      {openModalUpdateUser && <UpdateUser />} */}
+      {openModalEdit && <EditContact />}
+      {/* {openModalUpdateUser && <UpdateUser />} */}
       <Container>
         <StyledDashBoard>
           <Header />
