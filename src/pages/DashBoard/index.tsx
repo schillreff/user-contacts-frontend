@@ -10,6 +10,7 @@ import { UserContext } from '../../contexts/User';
 import { ThemeButton } from '../../styles/Button';
 import { ThemeText, ThemeTitle } from '../../styles/Typography';
 import { StyledDashBoard } from './styles';
+import { UpdateUser } from '../../components/User/UpdateUser';
 
 export const DashBoard = () => {
   const { user, openModalUpdateUser } = useContext(UserContext);
@@ -20,7 +21,7 @@ export const DashBoard = () => {
     <>
       {openModal && <RegisterContact />}
       {openModalEdit && <EditContact />}
-      {/* {openModalUpdateUser && <UpdateUser />} */}
+      {openModalUpdateUser && <UpdateUser />}
       <Container>
         <StyledDashBoard>
           <Header />
